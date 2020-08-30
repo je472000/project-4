@@ -1,0 +1,112 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+}
+
+.hour {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+}
+
+.past {
+  background-color: #b13e3e;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.calendarTimeBlock {
+  border-radius: 8px;
+  border: 1px solid #e6e7e8;
+  padding: 40px;
+  background: whitesmoke;
+}
+
+/* bold our dynamic date */
+
+.todaysdate {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* Add some margin to the bootstrap modal */
+.meetingInput {
+  margin-top: 30px;
+}
+
+/* in our time blocks, we want them to be in line */
+.hour,
+.meetingName {
+  float: left;
+}
+
+/* Give some space between the time and the meeting name */
+
+.hour {
+  margin-right: 20px;
+}
+
+/* Color our time blocks, and control cursor and pointers */
+.inThePast {
+  background-color: rgba(255, 0, 0, 0.3);
+  color: white;
+  font-weight: bold;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* Color our time blocks, and control cursor and pointers */
+
+.inTheFuture {
+  background-color: rgba(0, 0, 255, 0.3);
+  cursor: pointer;
+}
